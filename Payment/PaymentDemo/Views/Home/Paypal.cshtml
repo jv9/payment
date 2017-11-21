@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Paypal";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>  
+
+<form action="/home/paypal" method="post">
+    <div class="form-group">
+        <label>Amount</label>
+        <input type="number" class="form-control" name="amount" placeholder="Amount" value="0.01">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
